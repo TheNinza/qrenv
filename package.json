@@ -1,0 +1,43 @@
+{
+  "name": "qrenv",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "qrenv": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development tsup",
+    "build": "cross-env NODE_ENV=production tsup",
+    "start": "cross-env NODE_ENV=production node dist/index.js"
+  },
+  "keywords": [
+    "qrenv",
+    "env",
+    "qr",
+    "qrcode",
+    "cli"
+  ],
+  "author": "theninza <niks.a3198@gmail.com> (https://theninza.me)",
+  "license": "MIT",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNinza/qrenv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheNinza/qrenv/issues"
+  },
+  "homepage": "https://github.com/TheNinza/qrenv#readme",
+  "devDependencies": {
+    "@swc/core": "^1.6.3",
+    "@types/node": "^20.12.11",
+    "@types/qrcode-terminal": "^0.12.2",
+    "cross-env": "^7.0.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
+  }
+}
